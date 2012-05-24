@@ -43,6 +43,18 @@ Place following the script inside the PlaceHolderMain ContentPlaceHolder, before
 - Claims Authentication based on the official Microsoft sample http://msdn.microsoft.com/en-us/library/hh147177.aspx, modified to support proxies.
 - PeppeDotNet http://solutioninstaller365.codeplex.com for the Site.GetCatalog(121) trick and basic Client OM file upload code;
 
+#Sample Output Window
+    ...
+    Active Deployment Configuration: Default
+    Run Pre-Deployment Command:
+    365: Deactivating solution...
+    365: Uploading solution...
+    365: Activating solution...
+    365: Solution deployed.
+    Recycle IIS Application Pool:
+      Skipping application pool recycle because a sandboxed solution is being deployed.
+    ...
+
 #The MIT License (MIT)
 Copyright (c) 2012 Francisco Aquino *faquino@live.com*
 
