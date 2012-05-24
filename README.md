@@ -34,7 +34,7 @@ Place following the script inside the PlaceHolderMain ContentPlaceHolder, before
 	
     </script>
 
-###2. Add the following on your Pre or Post Solution Deployment step in the SharePoint tab (Visual Studio project):**
+###2. Add the following on your Pre or Post Solution Deployment step in the SharePoint tab (Visual Studio project):
 
 "C:/path/to/SharePointOnlineDeploy.exe" "https://365site/" "$(TargetDir)$(TargetName).wsp"
 
