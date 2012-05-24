@@ -101,6 +101,8 @@ namespace SharePointOnlineDeploy
         if (args.Length == 3 && args[2] == "debug")
           throw;
       }
+
+      Console.ReadLine();
     }
 
     static void webBrowser_Navigated(object sender, WebBrowserNavigatedEventArgs e)

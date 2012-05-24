@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Windows.Forms;
 using System.Net;
@@ -172,8 +173,6 @@ namespace MSDN.Samples.ClaimsAuth
     private void GetClaimParams(string targetUrl, out string loginUrl, out Uri navigationEndUrl)
     {
       var webRequest = (HttpWebRequest)WebRequest.Create(targetUrl);
-
-      webRequest.Proxy = WebRequest.GetSystemWebProxy();
       webRequest.Method = Constants.WR_METHOD_OPTIONS;
 
       ServicePointManager.ServerCertificateValidationCallback = IgnoreCertificateErrorHandler;
